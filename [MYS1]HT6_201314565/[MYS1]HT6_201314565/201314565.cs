@@ -5,6 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*************************************************************************************
+    HOJA DE TRABAJO 6 - MODELACIÓN Y SIMULACIÓN 1
+    DANILO URÍAS COC
+    201314565
+    REPOSITORIO DE LA SOLUCIÓN COMPLETA: https://github.com/durias/-MYS1-HT6_201314565
+
+    Metodo para crear el modelo: construir_Modelo()
+
+**************************************************************************************/
+
 namespace _MYS1_HT6_201314565
 {
     class _201314565
@@ -22,7 +32,10 @@ namespace _MYS1_HT6_201314565
             model = proyectoApi.Models[1];
             intelligentObjects = model.Facility.IntelligentObjects;
         }
-
+        /***************************************************************************************
+            El método construir_Modelo() es el método que debe ser llamado desde el formulario
+            para crear todo el modelo solicitado.
+         *****************************************************************************************/
         public void construir_Modelo()
         {
 
@@ -278,12 +291,9 @@ namespace _MYS1_HT6_201314565
                 }
                 createPath(get_nodo("V6_" + id_unico), get_nodo("V3_" + id_unico));
             }
-
-
-
         }
 
-        //--------------- Métodos para creación de obejtos diversos --------------------------------
+        //--------------- Métodos para creación de obejtos 
 
         public void createTransferNode(string nombre, int x, int y)
         {
